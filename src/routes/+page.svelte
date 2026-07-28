@@ -171,17 +171,6 @@
 		</div>
 	</div>
 
-	<div class="mt-8">
-		<video
-			src="pitch.mp4"
-			controls
-			preload="metadata"
-			class="w-full rounded-xl border border-primary-400/30 glow"
-		>
-		<track kind="captions" src="pitch.vtt" srclang="en" label="English" default />
-		<track kind="captions" src="pitch-pt.vtt" srclang="pt" label="Portuguese" default />
-		</video>
-	</div>
 
 </section>
 
@@ -318,58 +307,63 @@
 	</div>
 </section>
 
-<section
-	id="about"
-	class="py-24 scroll-mt-24"
->
+<section id="about" class="py-24 scroll-mt-24">
 	<p class="font-mono text-xs uppercase tracking-[0.3em] text-primary-400 mb-3">
 		PROFILE
 	</p>
+
 	<h2 class="cyber-title text-4xl mb-12">
 		ABOUT
 	</h2>
+
 	<div class="cyber-card p-8">
-		<div class="grid lg:grid-cols-3 gap-10">
-			<div>
-				<p class="text-primary-400 font-mono text-xs mb-2">
-					ROLE
-				</p>
-				<p class="text-xl">
-					Data Engineer
-				</p>
+		<div class="flex flex-col lg:flex-row gap-8 items-start">
+
+			<!-- Vídeo -->
+			<div class="lg:w-1/3 flex justify-center">
+				<video
+					src="/pitch.mp4"
+					controls
+					preload="metadata"
+					class="w-full rounded-xl border border-primary-400/30 glow"
+				>
+					<track kind="captions" src="/pitch.vtt" srclang="en" label="English" default />
+					<track kind="captions" src="/pitch-pt.vtt" srclang="pt" label="Portuguese" />
+				</video>
 			</div>
-			<div>
-				<p class="text-primary-400 font-mono text-xs mb-2">
-					EDUCATION
-				</p>
-				<p>
-					B.Sc Mathematics
-				</p>
-				<p>
-					M.Sc Applied Mathematics
+
+			<!-- Conteúdo -->
+			<div class="lg:w-2/3">
+				<div class="grid lg:grid-cols-3 gap-10">
+					<div>
+						<p class="text-primary-400 font-mono text-xs mb-2">ROLE</p>
+						<p class="text-xl">Data Engineer</p>
+					</div>
+
+					<div>
+						<p class="text-primary-400 font-mono text-xs mb-2">EDUCATION</p>
+						<p>B.Sc Mathematics</p>
+						<p>M.Sc Applied Mathematics</p>
+					</div>
+
+					<div>
+						<p class="text-primary-400 font-mono text-xs mb-2">STATUS</p>
+						<p class="text-green-400">{status}</p>
+					</div>
+				</div>
+
+				<p class="mt-10 leading-8 text-text-300">
+					My background is in Mathematics, followed by a master's degree in
+					Applied Mathematics. I enjoy building distributed systems, modern
+					data platforms and machine learning applications, combining
+					mathematical foundations with software engineering.
 				</p>
 			</div>
 
-			<div>
-				<p class="text-primary-400 font-mono text-xs mb-2">
-					STATUS
-				</p>
-				<p class="text-green-400">
-					{status}
-				</p>
-			</div>
 		</div>
-		<p class="mt-10 leading-8 text-text-300">
-
-			My background is in Mathematics, followed by a master's degree in
-			Applied Mathematics. I enjoy building distributed systems, modern
-			data platforms and machine learning applications, combining
-			mathematical foundations with software engineering.
-
-		</p>
 	</div>
-
 </section>
+
 
 <section
 	id="contact"
