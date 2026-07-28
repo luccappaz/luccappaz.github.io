@@ -20,18 +20,18 @@ and machine learning projects.
 
 ## Running locally
 
-\`\`\`bash
+```bash
 git clone https://github.com/luccappaz/<nome-do-repo>.git
 cd <nome-do-repo>
 npm install
 npm run dev
-\`\`\`
+```
 
 ## Build
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 Static output goes to \`build/\`, deployed automatically to GitHub Pages
 on push to \`main\` via GitHub Actions.
