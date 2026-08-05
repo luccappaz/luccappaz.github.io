@@ -89,7 +89,7 @@
 	];
 
 
-    let expandedTitle: string | null = null;
+    let expandedTitle: string | null = $state(null);
     let status = "OPEN TO WORK";
 
 </script>
@@ -218,7 +218,7 @@
                 <button
                         type="button"
                         class="w-full p-6 text-left cursor-pointer"
-                        on:click={() => expandedTitle = isOpen ? null : project.title}
+                        onclick={() => expandedTitle = isOpen ? null : project.title}
                         aria-expanded={isOpen}
                 >
                     <div class="flex justify-between items-center">
