@@ -89,7 +89,7 @@
 	];
 
 
-    let expandedTitle: string | null = $state(null);
+    let expandedTitle = $state<string | null>(null);
     let status = "OPEN TO WORK";
 
 </script>
@@ -266,7 +266,7 @@
 
                         <div class="flex gap-4 mt-6">
 
-                            {#each project.links as link (link)}
+                            {#each project.links as link (link.label)}
                                 <a
                                         href={link.href}
                                         target="_blank"
@@ -299,7 +299,7 @@
         TECH STACK
     </h2>
     <div class="grid md:grid-cols-2 gap-8">
-        {#each toolGroups as group (group)}
+        {#each toolGroups as group (group.label)}
             <div class="cyber-card p-7">
                 <div class="flex items-center justify-between mb-6">
                     <h3 class="cyber-title text-xl">
