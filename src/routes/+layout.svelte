@@ -7,10 +7,11 @@
 		{ href: '/#home', label: 'HOME' },
 		{ href: '/#projects', label: 'PROJECTS' },
 		{ href: '/#stack', label: 'STACK' },
+		{ href: '/#certifications', label: 'CERTIFICATIONS' },
 		{ href: '/#about', label: 'ABOUT' },
 		{ href: '/#contact', label: 'CONTACT' }
 	] as const;
-	// tema: lê do localStorage no client, senão cai pra 'dark'
+	// tema: lê do localStorage no client, senão cai para 'dark'
 	let theme = $state<'dark' | 'light'>(
 		browser ? ((localStorage.getItem('theme') as 'dark' | 'light') ?? 'dark') : 'dark'
 	);
