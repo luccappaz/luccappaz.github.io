@@ -382,7 +382,7 @@
 			playsinline
 			class="w-full rounded-xl border border-primary-400/30 glow"
 		    >
-			<source src="/pitch_web.mp4" type="video/mp4" />
+			<source src="/pitch.webm" type="video/webm" />
 			<track kind="captions" src="/pitch.vtt" srclang="en" label="English" default />
 			<track kind="captions" src="/pitch-pt.vtt" srclang="pt" label="Portuguese" />
 			Seu navegador não suporta a exibição deste vídeo.
