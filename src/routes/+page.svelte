@@ -376,15 +376,17 @@
 
             <!-- Vídeo -->
             <div class="lg:w-1/3 flex justify-center">
-                <video
-                        src="/pitch.mp4"
-                        controls
-                        preload="metadata"
-                        class="w-full rounded-xl border border-primary-400/30 glow"
-                >
-                    <track kind="captions" src="/pitch.vtt" srclang="en" label="English" default/>
-                    <track kind="captions" src="/pitch-pt.vtt" srclang="pt" label="Portuguese"/>
-                </video>
+		    <video
+			controls
+			preload="metadata"
+			playsinline
+			class="w-full rounded-xl border border-primary-400/30 glow"
+		    >
+			<source src="/pitch.mp4" type="video/mp4" />
+			<track kind="captions" src="/pitch.vtt" srclang="en" label="English" default />
+			<track kind="captions" src="/pitch-pt.vtt" srclang="pt" label="Portuguese" />
+			Seu navegador não suporta a exibição deste vídeo.
+		    </video>
             </div>
 
             <!-- Conteúdo -->
