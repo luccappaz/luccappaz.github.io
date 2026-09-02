@@ -52,6 +52,16 @@
             links: [
                 {label: 'repository', href: 'https://github.com/luccappaz/FuzzyMethods'}
             ]
+        },
+        {
+            title: 'E-Commerce Platform — Microservices on EKS',
+            description: 'Scalable e-commerce platform built on a microservices architecture, deployed on Amazon EKS with GitOps CI/CD via GitHub Actions and Argo CD.',
+            tags: ['Amazon EKS', 'Argo CD', 'GitHub Actions'],
+            rotate: 'rotate-1',
+            details: 'The platform decomposes business logic into independent microservices orchestrated on Amazon EKS (Elastic Kubernetes Service). Traffic is routed through the AWS Load Balancer Controller, with DNS resolution and subdomain management handled by Route 53. The CI/CD pipeline uses GitHub Actions for automated builds, container image pushes, and integration tests, while Argo CD manages progressive delivery and cluster synchronization via a GitOps workflow. Each microservice exposes a versioned API, is individually deployable, and scales independently based on load.',
+            links: [
+                {label: 'repository', href: 'https://github.com/luccappaz/e-commerce'}
+            ]
         }
     ];
 
@@ -69,12 +79,17 @@
         {
             label: 'Databases',
             rotate: 'rotate-1',
-            items: ['PostgreSQL', 'pgvector', 'SQL']
+            items: ['PostgreSQL', 'pgvector', 'SQL', 'Amazon Redshift', 'Amazon Aurora']
         },
         {
             label: 'Infra & Languages',
             rotate: '-rotate-1',
             items: ['Python', 'Julia', 'Bash', 'Docker', 'Docker Compose', 'Prometheus', 'Git']
+        },
+        {
+            label: 'Infrastructure & DevOps',
+            rotate: 'rotate-1',
+            items: ['Linux', 'Docker', 'Docker Compose', 'Kubernetes', 'Amazon EKS', 'Prometheus', 'Git', 'GitHub Actions', 'Argo CD']
         }
     ];
 
@@ -86,6 +101,13 @@
 			credentialUrl: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/f0666f2c5439407385cd36ae43bd6bcc',
 			tags: ['AWS', 'Amazon Bedrock', 'Amazon SageMaker AI', 'AI Agents']
 		},
+        {
+            title: 'Cloud Practitioner',
+            issuer: 'Amazon AWS',
+            date: 'September 2026',
+            credentialUrl: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/75c12b16a0784e55838e9f938ce5c486',
+            tags: ['AWS', 'Amazon EKS', 'Amazon CloudFront', 'AWS Load Balancer']
+        },
 	];
 
 
